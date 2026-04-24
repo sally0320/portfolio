@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>さりぃ / Maho Hayashida | Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&family=Yomogi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=73">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">PORTFOLIO</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact" class="nav-contact-btn">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <!-- キラキラパーティクル -->
+    <canvas id="sparkles" class="sparkles-canvas"></canvas>
+    <!-- ほわほわグラデーション -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="hero-catchcopy text-animate">映像で、<br>伝わるを創る。</div>
+    <div class="hero-content">
+      <div class="hero-icon hero-stagger">
+        <img src="images/icon.png" alt="さりぃ">
+        <div class="icon-sparkles">
+          <span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>✦</span><span>✧</span>
+        </div>
+      </div>
+      <h1 class="hero-name hero-stagger">さりぃ</h1>
+      <p class="hero-realname hero-stagger">Maho Hayashida — Video Editor</p>
+      <a href="#works" class="hero-cta hero-stagger">Works を見る</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- セクション区切り -->
+  <div class="section-divider hero-to-about">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 Q360 120 720 60 Q1080 0 1440 60 L1440 120 L0 120Z" fill="#ffffff"/></svg>
+  </div>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-layout fade-in">
+        <div class="about-left">
+          <p class="about-text">
+            SNS広告、プロモーション映像、ブランドムービー、イベント映像——あらゆる映像制作に対応いたします。漠然としたイメージ段階からでも、ヒアリングを通じて企画・構成をご提案。お客様のビジョンを最適な映像表現へと落とし込みます。
+          </p>
+          <p class="about-text">
+            既存コンテンツの制作を引き継ぐ際は、トーン・テンポ・世界観を徹底的に分析。視聴者に違和感を与えないシームレスなクオリティをお約束します。
+          </p>
+          <p class="about-text">
+            医療従事者としてのキャリアを持ち、ヘルスケア・医療分野など専門性の高い領域にも対応。女性視点のクリエイティブも強みとしています。
+          </p>
+        </div>
+        <div class="about-right">
+          <img src="images/desk.jpg" alt="ワークスペース" class="about-photo">
+        </div>
+      </div>
+
+      <div class="about-stats fade-in">
+        <div class="stat-item">
+          <span class="stat-number" data-count="1000">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-label">納品実績</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="100">0</span>
+          <span class="stat-suffix">万+</span>
+          <span class="stat-label">再生回数実績</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="4">0</span>
+          <span class="stat-suffix">ch</span>
+          <span class="stat-label">自己運営<br>YouTube収益化</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number-text">多数</span>
+          <span class="stat-label">企業案件</span>
+        </div>
+      </div>
+
+      <div class="about-genre fade-in">
+        <span>広告・PR</span><span>SNSコンテンツ</span><span>企業VP</span><span>医療・ヘルスケア</span><span>ブランディング</span><span>ウェディング</span>
+      </div>
+
+      <div class="about-tools fade-in">
+        <h3 class="about-tools-title">Tools</h3>
+        <div class="tools-grid">
+          <div class="tool-item"><div class="tool-icon">Pr</div><span>Premiere Pro</span></div>
+          <div class="tool-item"><div class="tool-icon">Ps</div><span>Photoshop</span></div>
+          <div class="tool-item"><div class="tool-icon">Ai</div><span>Illustrator</span></div>
+          <div class="tool-item"><div class="tool-icon">Ca</div><span>Canva</span></div>
+          <div class="tool-item"><div class="tool-icon">Fi</div><span>Filmora</span></div>
+          <div class="tool-item"><div class="tool-icon">CC</div><span>CapCut</span></div>
+        </div>
+        <h3 class="about-tools-title" style="margin-top: 32px;">AI Tools</h3>
+        <p class="about-ai-note">Claude / Midjourney / Suno AI / Veo / Kling など、最新のAIツールも積極的に活用しています。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- セクション区切り -->
+  <div class="section-divider about-to-works">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 Q360 0 720 60 Q1080 120 1440 60 L1440 120 L0 120Z" fill="#f3eef9"/></svg>
+  </div>
+
+  <!-- Works -->
+  <section class="section works" id="works">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Works</h2>
+      </div>
+      <div class="works-grid">
+        <div class="work-item fade-in">
+          <div class="work-video-short" id="yt1">
+            <iframe src="https://www.youtube.com/embed/35zJ7ALFNic?vq=hd1080" title="ショート動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            <div class="ig-overlay" onclick="document.getElementById('yt1').classList.add('expanded')"></div>
+          </div>
+          <button class="ig-toggle-btn ig-close-btn" onclick="document.getElementById('yt1').classList.remove('expanded')">▲ 閉じる</button>
+        </div>
+        <div class="work-item fade-in">
+          <div class="work-video">
+            <iframe src="https://www.youtube.com/embed/cBCZ2uyxED4?vq=hd1080" title="横型動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="work-item fade-in">
+          <div class="work-video-short" id="yt3">
+            <iframe src="https://www.youtube.com/embed/srzenCZERa4?vq=hd1080" title="ショート動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            <div class="ig-overlay" onclick="document.getElementById('yt3').classList.add('expanded')"></div>
+          </div>
+          <button class="ig-toggle-btn ig-close-btn" onclick="document.getElementById('yt3').classList.remove('expanded')">▲ 閉じる</button>
+        </div>
+        <div class="work-item fade-in">
+          <div class="work-video-short" id="yt4">
+            <iframe src="https://www.youtube.com/embed/6_LxZI1Xu7E?vq=hd1080" title="ショート動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            <div class="ig-overlay" onclick="document.getElementById('yt4').classList.add('expanded')"></div>
+          </div>
+          <button class="ig-toggle-btn ig-close-btn" onclick="document.getElementById('yt4').classList.remove('expanded')">▲ 閉じる</button>
+        </div>
+        <div class="work-item fade-in">
+          <div class="work-video-ig" id="ig1">
+            <iframe src="https://www.instagram.com/p/DM1uHF8xlvk/embed/" title="Instagram" frameborder="0" scrolling="no" allowfullscreen loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="ig-overlay" onclick="document.getElementById('ig1').classList.add('expanded'); this.nextElementSibling.textContent='▲ 閉じる'"></div>
+          </div>
+          <button class="ig-toggle-btn" onclick="var el=document.getElementById('ig1'); el.classList.toggle('expanded'); this.textContent=el.classList.contains('expanded')?'▲ 閉じる':'▼ 開く'">▼ 開く</button>
+        </div>
+        <div class="work-item fade-in">
+          <div class="work-video-ig" id="ig2">
+            <iframe src="https://www.instagram.com/p/DNZnh4lv4qf/embed/" title="Instagram" frameborder="0" scrolling="no" allowfullscreen loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="ig-overlay" onclick="document.getElementById('ig2').classList.add('expanded'); this.nextElementSibling.textContent='▲ 閉じる'"></div>
+          </div>
+          <button class="ig-toggle-btn" onclick="var el=document.getElementById('ig2'); el.classList.toggle('expanded'); this.textContent=el.classList.contains('expanded')?'▲ 閉じる':'▼ 開く'">▼ 開く</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- セクション区切り -->
+  <div class="section-divider works-to-pricing">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 Q360 120 720 60 Q1080 0 1440 60 L1440 120 L0 120Z" fill="#ffffff"/></svg>
+  </div>
+
+  <!-- Pricing -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Pricing</h2>
+      </div>
+      <div class="pricing-grid fade-in">
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Short</div>
+          <div class="pricing-label">ショート動画</div>
+          <div class="pricing-price">&yen;10,000<span>〜</span></div>
+          <p class="pricing-desc">90秒まで</p>
+          <ul class="pricing-features">
+            <li>カット編集</li>
+            <li>テロップ追加</li>
+            <li>BGM・効果音挿入</li>
+            <li>色調補正</li>
+            <li>シンプルなアニメーション</li>
+            <li>画像挿入</li>
+            <li>納期：7日前後</li>
+            <li>修正2回まで無料</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-label">横型動画</div>
+          <div class="pricing-price">&yen;30,000<span>〜</span></div>
+          <p class="pricing-desc">完成尺10分まで</p>
+          <ul class="pricing-features">
+            <li>カット・テロップ・BGM</li>
+            <li>効果音挿入・色調補正</li>
+            <li>シンプルなアニメーション</li>
+            <li>15分まで ¥38,000</li>
+            <li>20分まで ¥45,000</li>
+            <li>納期：2週間前後</li>
+            <li>修正2回まで無料</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-label">Option</div>
+          <div class="pricing-price">要相談</div>
+          <p class="pricing-desc">追加オプション</p>
+          <ul class="pricing-features">
+            <li>高度なエフェクト・アニメーション</li>
+            <li>モザイク追従</li>
+            <li>素材尺が完成尺の2倍以上</li>
+            <li>お急ぎ対応</li>
+            <li>ご予算に応じて柔軟に対応</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pricing-note fade-in">※ 料金はすべて税込です。内容により変動しますので、まずはお気軽にご相談ください。</p>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section class="section profile" id="profile">
+    <div class="container">
+      <div class="profile-card fade-in">
+        <div class="profile-photo">
+          <img src="images/family-circle.png" alt="さりぃと家族">
+        </div>
+        <div class="profile-info">
+          <h3 class="profile-name">さりぃ <span>/ Maho Hayashida</span></h3>
+          <p class="profile-role">Video Editor</p>
+          <p class="profile-bio">
+            長崎県在住。元助産師・看護師。2児の母。<br>
+            動画編集者として1,000本以上の納品実績あり。<br>
+            自身が運営する非属人YouTubeチャンネルは4つ収益化達成。<br>
+            どんなジャンルでも、あなたの「伝えたい」を映像にします。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- セクション区切り -->
+  <div class="section-divider profile-to-contact">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 Q360 0 720 60 Q1080 120 1440 60 L1440 120 L0 120Z" fill="#f3eef9"/></svg>
+  </div>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-content fade-in">
+        <p class="contact-text">お仕事のご依頼・ご相談はお気軽にどうぞ。</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <span class="contact-label">Mail</span>
+            <a href="mailto:maaah97@gmail.com">maaah97@gmail.com</a>
+          </div>
+          <div class="contact-divider"></div>
+          <div class="contact-item">
+            <span class="contact-label">Chatwork</span>
+            <a href="https://www.chatwork.com/sally_320" target="_blank" rel="noopener">sally_320</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blob blob-contact-1"></div>
+    <div class="blob blob-contact-2"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 さりぃ / Maho Hayashida. All rights reserved.</p>
+    <p class="footer-credit">This site was built with Claude Code</p>
+  </footer>
+
+
+  <script src="js/main.js?v=73"></script>
+</body>
+</html>
